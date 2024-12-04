@@ -1,0 +1,66 @@
+[
+  {
+    "company": "Self-Employed",
+    "jobTitle": "Freelance Full-Stack Developer",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "WordPress",
+      "PHP",
+      "React Three Fiber",
+      "TailwindCSS",
+      "NGINX",
+      "VPS Infrastructure"
+    ],
+    "mainDescription": "As a self-employed freelancer/contractor I collaborate with colleges, startups, and businesses to craft tailored web solutions that meet their unique needs.",
+    "subDetails": "The projects I've worked on range from building WordPress sites with custom PHP themes to developing advanced tools such as a 3D venue editor for a SaaS platform. I enjoy tackling creative challenges, utilizing my technical expertise with tools like React, Next.js, and TailwindCSS, alongside newer and more creative or 3D tools such as React Three Fiber to deliver unique, user-focused solutions.",
+    "end": "present",
+    "start": "Nov. 2022"
+  },
+  {
+    "company": "Planning Diva Co.",
+    "jobTitle": "Software Engineer",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "React Three Fiber",
+      "Google Cloud",
+      "REST APIs",
+      "PostgreSQL",
+      "Blender"
+    ],
+    "mainDescription": "As a Software Engineer at an early-stage SaaS startup, I spearheaded the design and development of an innovative 3D event venue layout editor, transforming how planners visualize and organize their events.",
+    "subDetails": "Built an immersive 3D event venue layout editor using React Three Fiber, allowing users to navigate venue spaces, customize walls, and place furniture for detailed event planning. Collaborated with a team of engineers on the broader SaaS platform while leveraging technologies like Next.js, TailwindCSS, TypeScript, PostgreSQL, Docker, and Google Cloud to ensure seamless functionality and scalability.",
+    "end": "Mar. 2024",
+    "start": "Apr. 2024"
+  },
+  {
+    "company": "Mobilize Solutions",
+    "jobTitle": "Web AR/Frontend Developer",
+    "skills": ["JavaScript", "Three.js", "8th Wall", "A-Frame", "HTML", "CSS"],
+    "mainDescription": "I partnered with Mobilize Solutions to create immersive Web AR experiences and optimize their mobile app’s frontend using modern web technologies.",
+    "subDetails": "Leveraged JavaScript, 8th Wall, and HTML/CSS to develop 3D augmented reality features that boosted user engagement by 20%. Collaborated with an AR designer to craft and implement five unique AR experiences and adapted the app’s UI for the web, delivering seamless and interactive user interfaces.",
+    "end": "Mar. 2023",
+    "start": "Nov. 2022"
+  },
+  {
+    "company": "VDA Inc.",
+    "jobTitle": "Associate Designer/Technology Specialist",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Three.js",
+      "Adobe Illustrator",
+      "Lumion",
+      "Blender"
+    ],
+    "mainDescription": "At VDA Inc., I integrated advanced technology into physical, hybrid, and virtual events, while also enhancing event marketing with 3D renderings.",
+    "subDetails": "Using Three.js, JavaScript, HTML/CSS, and tools like Adobe Illustrator, Lumion, and Blender, I developed custom features for virtual events and created 3D renderings for event marketing. One highlight was coding a key date/time feature within third-party software, contributing to the success of a million-dollar project and enhancing event experiences through immersive visuals and seamless functionality.",
+    "end": "Nov.2022",
+    "start": "Oct. 2020"
+  }
+]

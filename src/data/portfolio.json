@@ -1,0 +1,146 @@
+[
+  {
+    "title": "thumb.lol",
+    "thumbnail": "thumblol-portfolio.png",
+    "images": [
+      "thumblol-portfolio-1.png",
+      "thumblol-portfolio-2.png",
+      "thumblol-portfolio-3.png",
+      "thumblol-portfolio-4.png"
+    ],
+    "link": "https://thumb.lol/",
+    "skills": [
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "Django REST Framework",
+      "Python",
+      "Nginx",
+      "Docker"
+    ],
+    "color": "#BD0000",
+    "description": "Thumb.lol is a tool I developed for YouTubers seeking quick and affordable thumbnails. Built with Next.js and TailwindCSS for the frontend and Django REST Framework with Python on the backend, it uses AI to transform a user's images into engaging, eye-catching thumbnails complete with text and outlines in seconds. The project is self-hosted on a VPS, leveraging Nginx, Docker, and Coolify for efficient deployment."
+  },
+  {
+    "title": "Merrimack Admin Portal",
+    "thumbnail": "merrimack-portfolio.png",
+    "images": [
+      "merrimack-portfolio.png",
+      "merrimack-portfolio-1.png",
+      "merrimack-portfolio-3.png",
+      "merrimack-portfolio-4.png"
+    ],
+    "link": "",
+    "skills": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "CSS",
+      "ACF",
+      "WordPress Theme Development"
+    ],
+    "color": "#3464FE",
+    "description": "This project involved creating a WordPress-based admin portal for Merrimack College staff to manage a physical touchscreen timeline kiosk. Built with a custom PHP theme, WordPress plugins such as ACF, and extensive custom JavaScript and CSS, the portal features a simple, easy to use interface for adding, editing, or deleting timeline milestones with text and images. This project was implemented as an effective solution to allow non-technical Merrimack staff to make updates to their timeline kiosk, which they often featured when touring with new students/families."
+  },
+  {
+    "title": "Mobilize Landing Page",
+    "thumbnail": "mobilize-portfolio.png",
+    "images": [
+      "mobilize-portfolio-1.png",
+      "mobilize-portfolio-2.png",
+      "mobilize-portfolio-3.png",
+      "mobilize-portfolio-4.png",
+      "mobilize-portfolio-5.png"
+    ],
+    "link": "https://mobilize.solutions/",
+    "skills": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "CSS",
+      "ACF",
+      "WordPress Theme Development"
+    ],
+    "color": "#FF8401",
+    "description": "For Mobilize Solutions, based in Irvine, California, I redesigned and developed a streamlined company landing page. Using Figma to create mockups based on the clients desired styling/inspirations, I then built a custom WordPress theme with PHP and JavaScript to create a clean and simple layout showcasing their products and features. This project also included ACF plugin integration to deliver a user-friendly experience for them to easily make future updates, aligning with their goal of a focused, single-page design which was easy to update."
+  },
+  {
+    "title": "Planning Diva 3D Editor",
+    "thumbnail": "planningdiva-portfolio.png",
+    "images": [
+      "planningdiva-portfolio-1.png",
+      "planningdiva-portfolio-2.png",
+      "planningdiva-portfolio-3.png",
+      "planningdiva-portfolio-3.5.png",
+      "planningdiva-portfolio-4.png",
+      "planningdiva-portfolio-5.png"
+    ],
+    "link": "https://planningdiva.com/",
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "React Three Fiber",
+      "Three.js",
+      "TailwindCSS",
+      "Drei"
+    ],
+    "color": "#807eed",
+    "description": "While contracting with Planning Diva, a Denver-based startup, I developed a 3D venue layout editor for their SaaS event planning platform. Using React Three Fiber, Next.js, the Drei library, and the Liveblocks API for adding collaboration, I built an intuitive tool that allows users to design and visualize venue layouts in 3D. The platform's frontend was built with Next.js, React, TailwindCSS, and TypeScript, while the backend used Go and PostgreSQL, hosted on Google Cloud. I collaborated with a team of other software engineers on other frontend components to deliver a quality SaaS product using the latest technologies."
+  },
+  {
+    "title": "3D Monster Concept Site",
+    "thumbnail": "monster-portfolio.png",
+    "images": [
+      "monster-portfolio-1.png",
+      "monster-portfolio-2.png",
+      "monster-portfolio-3.png"
+    ],
+    "link": "https://monster-landing-page.vercel.app/",
+    "skills": [
+      "React Three Fiber",
+      "Three.js",
+      "React",
+      "TailwindCSS",
+      "Vercel",
+      "Vite"
+    ],
+    "color": "#6B9A01",
+    "description": "This project was a for-fun proof of concept I did for myself. I was inspired by a similar 3D rolling bottle effect on another project, and decided to create a modern design take of a Monster Energy website, using the 3D rolling can as the centerpiece. This was also one of my first projects working with React Three Fiber. The page utilizes Vite, React, and TailwindCSS, hosted as a hobby project on Vercel."
+  },
+  {
+    "title": "Scituate Podiatry Website",
+    "thumbnail": "scitpod-portfolio.png",
+    "images": [
+      "scituate-portfolio-1.png",
+      "scituate-portfolio-2.png",
+      "scituate-portfolio-3.png",
+      "scituate-portfolio-4.png",
+      "scituate-portfolio-5.png"
+    ],
+    "link": "https://scituatepodiatry.com/",
+    "skills": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "CSS",
+      "WordPress Theme Development"
+    ],
+    "color": "#E9BB70",
+    "description": "For Scituate Podiatry, I redesigned their outdated website, migrating it from Joomla to WordPress for improved usability and scalability. This project included custom WordPress theme development, PHP, and CSS styling to create a modern design tailored to their needs. I also added practical features, such as a contact page for patient inquiries, and conducted an on-site photo shoot to capture professional, up-to-date images of staff and the location, revitalizing their online presence."
+  },
+  {
+    "title": "3D Labyrinth Game",
+    "thumbnail": "labyrinth-portfolio.png",
+    "images": [
+      "labyrinth-portfolio-1.png",
+      "labyrinth-portfolio-2.png",
+      "labyrinth-portfolio-3.png",
+      "labyrinth-portfolio-4.png"
+    ],
+    "link": "https://labyrinth-maze.vercel.app/",
+    "skills": ["Three.js", "JavaScript", "HTML", "CSS", "Blender"],
+    "color": "#00DDFF",
+    "description": "The 3D labyrinth game was another for-fun project which I thought up soon after going through Bruno Simon's Three.js course. The game elements and some parts are still missing, but this project was mainly meant to solidify my learning of Three.js and to see what I was able to create. This project also utilized Blender for modeling/texturing of elements."
+  }
+]
