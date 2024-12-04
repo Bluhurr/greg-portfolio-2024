@@ -203,7 +203,7 @@ export function PhoneModel(props: JSX.IntrinsicElements["group"]) {
   const y = -height / 2;
   const radius = 2;
 
-  let shape = new THREE.Shape();
+  const shape = new THREE.Shape();
   shape.moveTo(x, y + radius);
   shape.lineTo(x, y + height - radius);
   shape.quadraticCurveTo(x, y + height, x + radius, y + height);

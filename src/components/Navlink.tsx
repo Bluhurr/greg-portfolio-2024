@@ -38,7 +38,9 @@ const Navlink = ({
         className={variant === "default" ? defaultStyles : homeLogoStyles}
         onClick={(e) => {
           e.preventDefault();
-          onClick && onClick();
+          if (onClick) {
+            onClick();
+          }
         }}
         onMouseOver={() => {
           setHovering(true);
