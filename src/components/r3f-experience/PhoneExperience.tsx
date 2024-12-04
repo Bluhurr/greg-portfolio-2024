@@ -56,7 +56,7 @@ const Phone = () => {
     };
   }, []);
 
-  useFrame(({ pointer, camera }) => {
+  useFrame(({ camera }) => {
     v.copy({ x: mousePosition.current.x, y: mousePosition.current.y, z: 0 });
     v.unproject(camera);
     phone.current.rotation.y = MathUtils.lerp(

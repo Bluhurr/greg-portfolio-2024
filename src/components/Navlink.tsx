@@ -10,7 +10,6 @@ const lexendTera = Lexend_Tera({
 });
 
 interface NavlinkProps extends LiHTMLAttributes<HTMLLIElement> {
-  href: string;
   variant: "default" | "home-logo";
   children: React.ReactNode;
   color?: string;
@@ -18,7 +17,6 @@ interface NavlinkProps extends LiHTMLAttributes<HTMLLIElement> {
 }
 
 const Navlink = ({
-  href,
   children,
   color = "#55E3FE",
   variant = "default",

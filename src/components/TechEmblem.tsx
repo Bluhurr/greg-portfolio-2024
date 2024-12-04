@@ -32,7 +32,7 @@ interface TechEmblemProps {
   children?: ReactNode;
 }
 
-const TechEmblem = ({ techName, icon, children }: TechEmblemProps) => {
+const TechEmblem = ({ children }: TechEmblemProps) => {
   return (
     <div
       className={`nb-card self-center py-[0.5em] px-4 rounded-full !bg-[#FFC45D] text-xs font-semibold ${lexend.className}`}

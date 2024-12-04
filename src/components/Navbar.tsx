@@ -25,7 +25,6 @@ const Navbar = ({ navHeight }: NavbarProps) => {
       >
         <ul className="w-full flex gap-5 items-center h-full p-4 border-b-2 border-black">
           <Navlink
-            href="/"
             variant="home-logo"
             onClick={() => {
               scrollToSection("home", "start");
@@ -35,7 +34,6 @@ const Navbar = ({ navHeight }: NavbarProps) => {
             Greg <span className="text-[#55E3FF]">Lawrence</span>
           </Navlink>
           <Navlink
-            href="/#about"
             variant="default"
             color="#81ed7b"
             className="ml-auto"
@@ -46,7 +44,6 @@ const Navbar = ({ navHeight }: NavbarProps) => {
             About
           </Navlink>
           <Navlink
-            href="/#portfolio"
             variant="default"
             color="#FFC45D"
             onClick={() => {
@@ -56,7 +53,6 @@ const Navbar = ({ navHeight }: NavbarProps) => {
             Portfolio
           </Navlink>
           <Navlink
-            href="/#work"
             variant="default"
             color="#9499DC"
             onClick={() => {
@@ -66,7 +62,6 @@ const Navbar = ({ navHeight }: NavbarProps) => {
             Work
           </Navlink>
           <Navlink
-            href="/#contact"
             variant="default"
             className="mr-3"
             onClick={() => {

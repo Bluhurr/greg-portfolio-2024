@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Lexend_Tera, Lexend, Lexend_Giga } from "next/font/google";
+import { Lexend_Tera, Lexend_Giga } from "next/font/google";
 
 const lexendTera = Lexend_Tera({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -7,11 +7,6 @@ const lexendTera = Lexend_Tera({
 });
 
 const lexendGiga = Lexend_Giga({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
-
-const lexend = Lexend({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });

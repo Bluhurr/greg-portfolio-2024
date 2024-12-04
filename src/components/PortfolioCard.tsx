@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PortfolioSkill from "./PortfolioSkill";
-import { Lexend_Tera, Lexend } from "next/font/google";
+import { Lexend_Tera } from "next/font/google";
 import { motion } from "framer-motion";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
@@ -25,7 +25,6 @@ const PortfolioCard = ({
   bgImage,
   skills,
   title,
-  link,
   onClick,
   color = "#00D4FF",
 }: PortfolioCardProps) => {

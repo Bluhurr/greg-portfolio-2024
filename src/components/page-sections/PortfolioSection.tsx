@@ -45,7 +45,6 @@ const PortfolioSection = () => {
                 index={index}
                 bgImage={`/${project.thumbnail}`}
                 title={project.title}
-                link={project.link !== "" ? new URL(project.link) : ""}
                 skills={project.skills}
                 color={project.color}
                 onClick={() => {

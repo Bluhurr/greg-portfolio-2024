@@ -176,14 +176,6 @@ export function PhoneModel(props: JSX.IntrinsicElements["group"]) {
     depthWrite: true,
   });
 
-  const phoneEdges = new THREE.MeshStandardMaterial({
-    color: "#aaa",
-    roughness: 0.1,
-    metalness: 0.3,
-    depthTest: true,
-    depthWrite: true,
-  });
-
   const phoneButtons = new THREE.MeshStandardMaterial({
     color: "#00c3ff",
     roughness: 0.5,
@@ -205,11 +197,11 @@ export function PhoneModel(props: JSX.IntrinsicElements["group"]) {
     normalScale: new THREE.Vector2(2, 2),
   });
 
-  let width = 7.7;
-  let height = 16.2;
-  let x = -width / 2;
-  let y = -height / 2;
-  let radius = 2;
+  const width = 7.7;
+  const height = 16.2;
+  const x = -width / 2;
+  const y = -height / 2;
+  const radius = 2;
 
   let shape = new THREE.Shape();
   shape.moveTo(x, y + radius);
@@ -317,14 +309,14 @@ export function PhoneModel(props: JSX.IntrinsicElements["group"]) {
                         <span className="font-black text-[0.75em] inline-block">
                           Disclaimer:
                         </span>{" "}
-                        This game was not created by me (that'd be pretty cool
-                        huh?). <br />
+                        This game was not created by me (that&apos;d be pretty
+                        cool huh?). <br />
                         <br />
                         The game displayed is created by its respective
                         author/creator. I do not claim ownership or authorship
                         of the game. It is included to demonstrate 3D embedding
-                        capabilities using React Three Fiber and Drei's HTML
-                        element.
+                        capabilities using React Three Fiber and Drei&apos;s
+                        HTML element.
                       </p>
                     </div>
                   )}
