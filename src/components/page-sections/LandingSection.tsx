@@ -6,7 +6,6 @@ import AboutSection from "./AboutSection";
 import { Suspense } from "react";
 import Button from "@/components/Button";
 import { FaFileDownload } from "react-icons/fa";
-import { useIsMobile } from "@/util/isMobile";
 
 const lexendTera = Lexend_Tera({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,8 +17,6 @@ const lexend = Lexend({
 });
 
 const LandingSection = () => {
-  const isMobile = useIsMobile();
-
   return (
     <section
       id="home"
