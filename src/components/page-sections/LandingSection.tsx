@@ -47,7 +47,7 @@ const LandingSection = () => {
         <div className="lg:w-[48%] md:w-[30%] basis-full flex">
           <div className="lg:ml-[8em] md:ml-[4em] md:-mt-4 flex flex-col gap-5 justify-start md:justify-center md:items-start items-center">
             <h1
-              className={`${lexendTera.className} text-center md:text-start lg:text-[2.75em] md:text-[2.15em] text-[1.75em] md:block mb-[65vh] md:mb-[unset] leading-[1.1em] tracking-[-0.15em] md:text-nowrap !drop-shadow-[4px_4px_0px_black] !font-black nb-style-text`}
+              className={`${lexendTera.className} text-center md:text-start lg:text-[2.75em] md:text-[2.15em] text-[1.65em] md:block ml-[-0.5em] mt-2 mb-[65vh] md:mb-[unset] leading-[1.1em] tracking-[-0.15em] md:text-nowrap !drop-shadow-[4px_4px_0px_black] !font-black nb-style-text`}
             >
               Creative Full-Stack
               <br />
@@ -78,7 +78,7 @@ const LandingSection = () => {
         </div>
         <div
           id="root"
-          className="basis-full flex flex-col items-center absolute md:relative top-[0.5em] h-[83vh] w-[100%] md:h-[unset] md:top-[unset] md:h-unset md:w-[50%]"
+          className="basis-full flex flex-col items-center absolute md:relative top-0 h-[83vh] w-[100%] md:h-[unset] md:top-[unset] md:h-unset md:w-[50%]"
         >
           <Suspense fallback={null}>
             <PhoneExperience></PhoneExperience>
