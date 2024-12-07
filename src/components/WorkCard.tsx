@@ -37,14 +37,14 @@ const WorkCard = ({
     <div className="flex gap-[1.5em] justify-center pl-[0.75em] md:pl-[5em] z-0">
       <motion.div
         initial={{
-          x: isMobile ? 0 : -150,
+          x: isMobile ? 0 : -100,
           opacity: isMobile ? 1 : 0,
         }}
         whileInView={{
           opacity: 1,
           x: 0,
         }}
-        viewport={{ once: true, margin: "-120px" }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{
           delay: 0.1,
           type: "spring",
