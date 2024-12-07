@@ -34,7 +34,7 @@ const PortfolioSection = () => {
           className="!bg-[#FFE1AE] nb-card relative nb-shadow-lg rounded-t-[3em] md:rounded-t-[15em] rounded-b-[2em] md:rounded-b-[3.5em] md:mt-[19em] mt-[10em] p-0 md:p-[3.5rem] pt-[6.75em] md:pt-[9.5em] pb-[1em] md:pb-[5em] w-[95%] md:w-[85%] h-fit max-w-[1200px]"
         >
           <h2
-            className={`border-2 border-black nb-drop-shadow absolute top-[-1em] left-[3em] !bg-[#FFC45D] grow-0 p-[1.12em] -rotate-6 text-2xl px-[2em] min-w-[10em] w-[11em] ${lexendTera.className} rounded-3xl font-semibold tracking-[-0.1em]`}
+            className={`border-2 border-black nb-drop-shadow absolute top-[-1em] left-0 md:left-[3em] !bg-[#FFC45D] grow-0 p-[1.12em] -rotate-6 text-2xl px-[2em] min-w-[10em] w-[11em] ${lexendTera.className} rounded-3xl font-semibold tracking-[-0.1em]`}
           >
             Portfolio
           </h2>

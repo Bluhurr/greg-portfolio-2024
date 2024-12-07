@@ -7,7 +7,7 @@ import ContactSection from "@/components/page-sections/ContactSection";
 
 export default function Home() {
   return (
-    <div className="flex items-center flex-col relative w-full justify-center z-0">
+    <div className="flex items-center flex-col relative w-full justify-center z-0 overflow-x-hidden">
       <LandingSection></LandingSection>
       <PortfolioSection></PortfolioSection>
       <WorkSection></WorkSection>
