@@ -37,7 +37,7 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
             type: "spring",
             duration: 0.65,
           }}
-          className="fixed w-[95%] ml-[0.5em] max-w-[1500px] overflow-hidden max-h-[80%] nb-border nb-shadow-lg rounded-2xl h-[40em] mt-auto mb-auto top-[4.5em] bottom-0 z-[10000] bg-white"
+          className="fixed w-[95%] md:ml-[0.5em] max-w-[1500px] overflow-hidden max-h-[85%] md:max-h-[80%] nb-border nb-shadow-lg rounded-2xl h-[40em] mt-auto mb-auto top-[4.5em] bottom-0 z-[10000] bg-white"
         >
           <button
             className="absolute top-[1.05em] right-[1.05em] z-10 w-10 h-10"
@@ -46,8 +46,8 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
             <IoCloseCircleOutline className="w-full h-full hover:scale-[1.15] transition-all duration-[0.1s]" />
           </button>
 
-          <div className="w-full h-full flex gap-4 p-8 flex-wrap overflow-auto">
-            <div className="flex flex-col min-w-[30em] basis-[55%] gap-5 relative">
+          <div className="w-full h-full flex gap-4 p-4 md:p-8 md:pt-[4em] lg:flex-wrap overflow-auto pt-[4em] lg:flex-row flex-col">
+            <div className="flex flex-col lg:flex-col md:min-w-[30em] basis-[55%] gap-5 relative">
               <Carousel
                 onPointerEnterCapture={() => {}}
                 onPointerLeaveCapture={() => {}}
@@ -79,7 +79,7 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
                 ))}
               </Carousel>
 
-              <div className="flex gap-3 flex-wrap gap-y-5">
+              <div className="flex gap-3 flex-wrap gap-y-5 lg:justify-start md:justify-center justify-start">
                 {data?.skills?.map((skill, index) => (
                   <div
                     key={index}
@@ -91,8 +91,8 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col relative min-w-[10em] basis-[35%] grow">
-              <div className="flex flex-col p-5 pr-[3em] shrink-0">
+            <div className="flex flex-col lg:flex-col md:flex-row relative lg:min-w-[10em] lg:basis-[35%] grow md:h-full shrink-1">
+              <div className="flex flex-col mt-4 md:mt-[unset] md:justify-start justify-center md:p-5 pr-[1em] md:pr-[3em] h-full md:overflow-auto shrink-1 mb-5">
                 <h2
                   className={`pl-4 mb-4 text-2xl font-black ${lexendTera.className} tracking-[-0.1em]`}
                 >
@@ -105,7 +105,7 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
                 </p>
               </div>
               {data?.link && data.link !== "" && (
-                <div className="flex h-[6em] mt-auto mb-0">
+                <div className="flex h-[6em] my-auto lg:mt-auto lg:mb-0">
                   <motion.a
                     onHoverStart={() => {
                       arrowControls.start({ x: 3 });
@@ -115,7 +115,7 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
                     }}
                     href={data?.link}
                     target="_blank"
-                    className={`${lexend.className} leading-[1.2em] hover:scale-[1.025] hover:cursor-pointer hover:shadow-[0em_0em_0px_black] transition-all duration-[200ms] text-xl text-outline p-4 px-[1.25em] pr-[0.8em] mr-0 ml-auto flex justify-center items-center gap-[3em] text-white font-black nb-border nb-shadow rounded-md brightness-125`}
+                    className={`${lexend.className} leading-[1.2em] mt-2 hover:scale-[1.025] hover:cursor-pointer hover:shadow-[0em_0em_0px_black] transition-all duration-[200ms] text-xl text-outline p-4 px-[1.25em] pr-[0.8em] mx-auto md:mr-0 md:ml-auto flex justify-center items-center gap-[3em] text-white font-black nb-border nb-shadow rounded-md brightness-125`}
                     style={{ backgroundColor: data?.color }}
                   >
                     Check
@@ -141,7 +141,7 @@ const PortfolioPopup = ({ data, onClose }: PortfolioPopupProps) => {
                   </motion.a>
                 </div>
               )}
-              <div className="h-[2em] w-full flex shrink-0"></div>
+              <div className="h-[2em] lg:w-full flex shrink-0"></div>
             </div>
           </div>
         </motion.div>

@@ -63,7 +63,7 @@ const PortfolioCard = ({
         bounce: 0.2,
         duration: 0.5,
       }}
-      className="min-w-[24em] aspect-[6/3] lg:basis-[45%]"
+      className="w-full aspect-[6/3] lg:basis-[45%] basis-[100%]"
       viewport={{ once: true, margin: "-150px" }}
     >
       <motion.div
@@ -73,7 +73,7 @@ const PortfolioCard = ({
           y: hovering ? 2 : 0,
         }}
         transition={{ type: "spring", bounce: 0.3, duration: 0.35 }}
-        className="nb-border nb-shadow-xl aspect-[6/3] relative min-w-[24em]  rounded-2xl bg-white overflow-hidden relative"
+        className="nb-border md:nb-shadow-xl shadow-[2px_2px_0px_black] aspect-[5/3] md:aspect-[6/3] relative rounded-2xl bg-white overflow-hidden relative"
       >
         <div
           className="w-full h-full z-10 block relative cursor-pointer flex flex-col"
@@ -102,7 +102,7 @@ const PortfolioCard = ({
           >
             <h2
               ref={titleRef}
-              className={`${lexendTera.className} py-3 font-black tracking-[-0.140em] text-outline text-[1.5rem] pr-3 leading-[1.2em] flex items-center`}
+              className={`${lexendTera.className} py-3 font-black tracking-[-0.140em] text-outline text-[1rem] md:text-[1.5rem] pr-3 leading-[1.2em] flex items-center`}
             >
               {title}
             </h2>

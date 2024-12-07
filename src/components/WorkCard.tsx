@@ -1,5 +1,6 @@
 import { Lexend_Tera, Lexend } from "next/font/google";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/util/isMobile";
 
 const lexendTera = Lexend_Tera({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -30,11 +31,13 @@ const WorkCard = ({
   start,
   end,
 }: WorkCardProps) => {
+  const isMobile = useIsMobile();
+
   return (
-    <div className="flex gap-[2em] justify-center pl-[5em] z-0">
+    <div className="flex gap-[1.5em] justify-center pl-[0.75em] md:pl-[5em] z-0">
       <motion.div
         initial={{
-          x: -150,
+          x: isMobile ? 0 : -150,
           opacity: 0,
         }}
         whileInView={{
@@ -48,28 +51,34 @@ const WorkCard = ({
           bounce: 0.4,
           duration: 0.5,
         }}
-        className="w-[80%] basis-full flex p-4 pl-[2em] pr-[1.75em] bg-white z-10 nb-shadow-xl nb-border rounded-2xl relative pb-[2em]"
+        className="w-[90%] md:w-[80%] basis-full flex flex-col md:flex-row p-4 pb-4 md:p-4 md:pl-[2em] md:pr-[1.75em] bg-white z-10 nb-shadow-xl nb-border rounded-2xl relative md:pb-[2em]"
       >
         <div className="flex flex-col basis-[35%]">
           <h2
-            className={`${lexendTera.className} text-[1.5em] font-black tracking-[-0.15em]`}
+            className={`${lexendTera.className} text-[1.22em] md:text-[1.5em] font-black tracking-[-0.15em]`}
           >
             {company}
           </h2>
-          <p className={`${lexend.className} text-[1.1em] tracking-[0em]`}>
+          <p
+            className={`${lexend.className} font-bold font-[unset] text-[1em] md:text-[1.1em] tracking-[0em]`}
+          >
             {jobTitle}
           </p>
         </div>
-        <div className="flex flex-col basis-[67%] gap-4 mr-0 ml-auto pt-2">
-          <h3 className={`${lexend.className} font-bold text-md`}>
+        <div className="flex flex-col basis-[67%] gap-2 md:gap-4 mr-0 ml-auto pt-2">
+          <h3
+            className={`${lexend.className} font-regular md:leading-[unset] leading-[1.1em] text-md`}
+          >
             {mainDescription}
           </h3>
-          <p className={`${lexend.className} text-sm`}>{subDetails}</p>
+          <p className={`${lexend.className} font-light text-sm`}>
+            {subDetails}
+          </p>
         </div>
-        <div className="absolute top-[93%] flex w-full gap-2 gap-y-2 ml-[-1.1em] flex-wrap pr-[1em]">
+        <div className="relative mt-[5%] md:mt-[2%] lg:mt-[0%] md:absolute md:top-[93%] grid grid-cols-2 md:flex w-full gap-2 gap-y-2 md:ml-[-1.1em] md:flex-wrap md:pr-[1em]">
           {skills?.map((skill, index) => (
             <div
-              className={`bg-[#5D64C3] p-1 text-[0.84em] text-[#E3E5FF] font-semibold rounded-full px-4 nb-border nb-shadow ${lexend.className}`}
+              className={`bg-[#5D64C3] p-1 font-bold md:font-semibold text-[0.9em] md:text-[0.84em] text-[#E3E5FF] md:min-h-[unset] min-h-[4em] flex justify-center items-center md:text-start text-center rounded-xl md:rounded-full px-4 nb-border nb-shadow ${lexend.className}`}
               key={index}
             >
               {skill}
@@ -80,8 +89,12 @@ const WorkCard = ({
       {start && end && (
         <motion.div
           initial={{
-            x: -20,
-            opacity: 0,
+            x: isMobile ? 0 : -20,
+            opacity: isMobile ? 1 : 0,
+          }}
+          animate={{
+            opacity: isMobile ? 1 : 1,
+            x: isMobile ? -7 : 0,
           }}
           whileInView={{
             opacity: 1,
@@ -94,10 +107,10 @@ const WorkCard = ({
             bounce: 0.4,
             duration: 0.5,
           }}
-          className="basis-[10%] flex flex-col gap-2 shrink-0"
+          className="basis-[12%] flex flex-col gap-2 shrink-0"
         >
           <div
-            className={`${lexendTera.className} font-black text-md flex justify-center items-center rounded-xl -ml-2 p-[0.4em] pb-[0.6em] text-outline text-white nb-drop-shadow`}
+            className={`${lexendTera.className} font-black text-[0.65em] md:text-lg flex justify-center items-center rounded-xl -ml-2 p-[0.4em] pb-[0.6em] text-outline text-white nb-drop-shadow`}
             style={{
               backgroundColor: end === "present" ? "#936DEA" : "",
               border: end === "present" ? "2px solid black" : "",
@@ -121,7 +134,7 @@ const WorkCard = ({
             }}
           ></div>
           <div
-            className={`${lexendTera.className} text-outline font-black text-md text-white nb-drop-shadow`}
+            className={`${lexendTera.className} text-outline font-black text-[0.65em] md:text-lg text-white nb-drop-shadow`}
           >
             {start}
           </div>

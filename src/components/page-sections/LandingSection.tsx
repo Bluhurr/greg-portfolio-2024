@@ -1,5 +1,3 @@
-"use client";
-
 import { Lexend_Tera, Lexend } from "next/font/google";
 import TechEmblem from "../TechEmblem";
 import Image from "next/image";
@@ -8,6 +6,7 @@ import AboutSection from "./AboutSection";
 import { Suspense } from "react";
 import Button from "@/components/Button";
 import { FaFileDownload } from "react-icons/fa";
+import { useIsMobile } from "@/util/isMobile";
 
 const lexendTera = Lexend_Tera({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -19,13 +18,15 @@ const lexend = Lexend({
 });
 
 const LandingSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section
       id="home"
-      className="w-full h-[min(calc(100vh+7em),1200px)] flex justify-center"
+      className="w-full md:h-[min(calc(100vh+7em),1200px)] h-full flex justify-center relative"
     >
       <Button
-        className={`bottom-[1.5em] rounded-xl font-medium px-1 text-[1.1em] right-[2.30em] top-auto left-auto fixed z-[20] bg-[#59E9FF] ${lexend.className}`}
+        className={`bottom-[1.5em] rounded-xl font-medium px-1 text-sm md:text-[1.1em] right-4 md:right-[2.30em] top-auto left-auto fixed z-[20] bg-[#59E9FF]`}
       >
         <a
           href="/GregLawrence_Resume.pdf"
@@ -44,12 +45,12 @@ const LandingSection = () => {
         alt=""
         src="/Lines.png"
       />
-      <div className="absolute left-0 home-bg-gradient w-full h-[min(calc(100vh+7em),1200px)] z-[-2] min-h-[500px]"></div>
-      <div className="min-h-[500px] max-w-[1800px] -mt-3 h-[calc(100vh-4.5em)] max-h-[min(calc(100vh-4.5em),1024px)] w-full flex z-10 relative">
-        <div className="w-1/2 basis-full flex">
-          <div className="ml-[8em] -mt-4 flex flex-col gap-5 justify-center">
+      <div className="absolute left-0 h-[100%] home-bg-gradient w-full md:h-[min(calc(100vh+7em),1200px)] z-[-2] min-h-[500px]"></div>
+      <div className="min-h-[500px] max-w-[1800px] md:-mt-3 mt-2 md:h-[calc(100vh-4.5em)] md:max-h-[min(calc(100vh-4.5em),1024px)] w-full flex z-10 relative md:flex-row flex-col">
+        <div className="lg:w-[48%] md:w-[30%] basis-full flex">
+          <div className="lg:ml-[8em] md:ml-[4em] md:-mt-4 flex flex-col gap-5 justify-start md:justify-center md:items-start items-center">
             <h1
-              className={`${lexendTera.className} text-[2.75em] leading-[1.1em] tracking-[-0.15em] text-nowrap !drop-shadow-[4px_4px_0px_black] !font-black nb-style-text`}
+              className={`${lexendTera.className} text-center md:text-start lg:text-[2.75em] md:text-[2.15em] text-[1.75em] md:block mb-[65vh] md:mb-[unset] leading-[1.1em] tracking-[-0.15em] md:text-nowrap !drop-shadow-[4px_4px_0px_black] !font-black nb-style-text`}
             >
               Creative Full-Stack
               <br />
@@ -62,7 +63,7 @@ const LandingSection = () => {
               Lawrence, and I am a full-stack web developer with over 4 years of
               experience, specializing in creative and 3D web development.
             </h2>
-            <div className="mt-5 flex gap-4 w-[90%] flex-wrap">
+            <div className="mt-0 md:mt-5 flex gap-4 w-[90%] flex-wrap">
               <h3
                 className={`nb-card inline-block px-5 py-3 rounded-2xl font-semibold tracking-[0.02em] shrink-0 ${lexend.className}`}
               >
@@ -78,7 +79,10 @@ const LandingSection = () => {
             </div>
           </div>
         </div>
-        <div id="root" className="basis-full w-1/2 flex flex-col items-center">
+        <div
+          id="root"
+          className="basis-full flex flex-col items-center absolute md:relative top-[0.5em] h-[83vh] w-[100%] md:h-[unset] md:top-[unset] md:h-unset md:w-[50%]"
+        >
           <Suspense fallback={null}>
             <PhoneExperience></PhoneExperience>
           </Suspense>
