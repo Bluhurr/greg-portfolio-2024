@@ -38,7 +38,7 @@ const WorkCard = ({
       <motion.div
         initial={{
           x: isMobile ? 0 : -150,
-          opacity: 0,
+          opacity: isMobile ? 1 : 0,
         }}
         whileInView={{
           opacity: 1,
