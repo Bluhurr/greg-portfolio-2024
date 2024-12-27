@@ -30,7 +30,7 @@ const Navbar = ({ navHeight }: NavbarProps) => {
     <>
       <div
         style={{ height: `${navHeight}em` }}
-        className={`fixed w-full top-0 z-10`}
+        className={`fixed w-full top-0 z-10 bg-white`}
       >
         <ul className="w-full flex gap-5 z-20 items-center h-full lg:p-4 p-1 border-b-2 border-black">
           <Navlink
