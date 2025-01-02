@@ -16,9 +16,9 @@ const AboutSection = () => {
       <Image
         src={`/${aboutData.aboutImage}`}
         alt="about section greg photo"
-        width={100}
-        height={100}
-        className="border-2 border-black rounded-xl md:h-[14em] md:w-[14em] h-[10em] w-[10em]"
+        width={1080}
+        height={720}
+        className="border-2 border-black rounded-xl md:h-[14em] w-auto h-[10em] scale-x-[-1]"
       ></Image>
       <p className={`${lexend.className} lg:text-lg text-sm`}>
         {aboutData.aboutText}

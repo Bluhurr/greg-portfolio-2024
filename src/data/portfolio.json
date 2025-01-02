@@ -1,5 +1,29 @@
 [
   {
+    "title": "thumb.lol",
+    "thumbnail": "thumblol-portfolio.png",
+    "images": [
+      "thumblol-portfolio-1.png",
+      "thumblol-portfolio-2.png",
+      "thumblol-portfolio-5.webp",
+      "thumblol-portfolio-4.png"
+    ],
+    "link": "https://thumb.lol/",
+    "skills": [
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "Coolify",
+      "VPS Infrastructure",
+      "Django REST Framework",
+      "Python",
+      "Nginx",
+      "Docker"
+    ],
+    "color": "#BD0000",
+    "description": "Thumb.lol is a tool I developed for YouTubers seeking quick and affordable thumbnails. Originally thumb.lol was built with Next.js, TypeScript, and TailwindCSS for the frontend and Django REST Framework/Python for the backend, but I eventually refactored the entire backend functionality into Next.js and used Clerk for user authentication. Thumb.lol uses AI and image manipulation to transform a user's images into engaging, eye-catching thumbnails complete with text and outlines in seconds. The project is self-hosted on a VPS, originally using Nginx and Docker but later implemented with Coolify for simple and efficient deployment."
+  },
+  {
     "title": "Planning Diva 3D Editor",
     "thumbnail": "planningdiva-portfolio.png",
     "images": [

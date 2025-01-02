@@ -325,11 +325,15 @@ export function PhoneModel(props: JSX.IntrinsicElements["group"]) {
               {screenIsOn && (
                 <div className="bg-[#7FEAFF] flex flex-col w-[90%] pb-[10em] gap-[3em] p-4 overflow-auto scrollbar-phone-ui h-full rounded-[40px] pt-[3em]">
                   <div className="flex justify-center">
-                    <img
-                      className="rounded-full nb-card w-[13em] h-[13em]"
-                      src="/about-me-photo.png"
-                      alt="Phone avatar pic"
-                    />
+                    <div className="rounded-full overflow-hidden relative w-[13em] h-[13em] nb-card !bg-[#00a2c2] mt-4">
+                      <img
+                        className="rounded-full relative z-[2] object-cover scale-[0.80] scale-x-[0.80] object-top object-center mt-[-2em] drop-shadow-[5px_5px_0px_rgba(0,0,0,0.5)]"
+                        src="/phone-headshot-transparent.png"
+                        alt="Phone avatar pic"
+                        width={720}
+                        height={720}
+                      />
+                    </div>
                   </div>
                   <div
                     className={`flex flex-col gap-5 justify-center items-center w-full font-semibold ${lexendTera.className}`}
